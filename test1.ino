@@ -1,4 +1,7 @@
+//working example 
 #include <TFMini-Public.h>
+
+SYSTEM_THREAD(ENABLED); 
 
 TFMini tfmini;
 
@@ -7,6 +10,7 @@ void setup() {
     Serial1.begin(115200);
     delay(200);
     tfmini.begin(&Serial1);
+
 }
 
 void loop() {
